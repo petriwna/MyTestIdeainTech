@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.activity.LoginActivity"
+    android:background="@drawable/backgr_login"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="310dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/edit_text"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:textSize="20sp"
+        android:lineSpacingExtra="-23.3sp"
+        android:textColor="#7f7f7f"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="314dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="51dp"
+        android:background="@drawable/edit_text"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:lineSpacingExtra="-23.3sp"
+        android:padding="15dp"
+        android:textColor="#7f7f7f"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/userName"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/userName"
+        app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+    <Button
+        android:id="@+id/btn_sign_in"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="146dp"
+        android:background="@drawable/btn_login_register"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="@string/btn_login"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="163dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:lineSpacingExtra="0sp"
+        android:text="@string/forgot_password"
+        android:textColor="#b3ffffff"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sign_in" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="69dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="24dp"
+
+        android:layout_marginEnd="30dp"
+        android:gravity="end"
+        android:text="@string/text_view_register"
+        android:textColor="#b3ffffff"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sign_in" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="264dp"
+        android:layout_height="166dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.593"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/collab_logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
