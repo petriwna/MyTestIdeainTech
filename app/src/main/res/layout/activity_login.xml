@@ -5,12 +5,12 @@
     android:id="@+id/login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.login.activity.LoginActivity"
+    tools:context=".ui.activity.LoginActivity"
     android:background="@drawable/backgr_login"
     android:orientation="vertical">
 
     <EditText
-        android:id="@+id/userName"
+        android:id="@+id/et_email"
         android:layout_width="310dp"
         android:layout_height="49dp"
         android:layout_marginStart="52dp"
@@ -18,18 +18,18 @@
         android:layout_marginEnd="50dp"
         android:background="@drawable/edit_text"
         android:hint="@string/username"
-        android:inputType="textPersonName"
+        android:inputType="textEmailAddress"
         android:padding="15dp"
         android:textSize="20sp"
         android:lineSpacingExtra="-23.3sp"
         android:textColor="#7f7f7f"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/iv_imageView"
         app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintStart_toStartOf="@+id/iv_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/iv_imageView" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/et_password"
         android:layout_width="314dp"
         android:layout_height="55dp"
         android:layout_marginStart="50dp"
@@ -43,10 +43,10 @@
         android:padding="15dp"
         android:textColor="#7f7f7f"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/userName"
+        app:layout_constraintEnd_toEndOf="@+id/et_email"
         app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="@+id/userName"
-        app:layout_constraintTop_toBottomOf="@+id/userName" />
+        app:layout_constraintStart_toStartOf="@+id/et_email"
+        app:layout_constraintTop_toBottomOf="@+id/et_email" />
 
     <Button
         android:id="@+id/btn_sign_in"
@@ -61,13 +61,13 @@
         android:textAllCaps="false"
         android:textColor="@android:color/white"
         android:textSize="17sp"
-        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="@+id/et_password"
         app:layout_constraintHorizontal_bias="0.482"
-        app:layout_constraintStart_toStartOf="@+id/password"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:layout_constraintStart_toStartOf="@+id/et_password"
+        app:layout_constraintTop_toBottomOf="@+id/et_password" />
 
     <TextView
-        android:id="@+id/forgot_password"
+        android:id="@+id/tv_forgot_password"
         android:layout_width="163dp"
         android:layout_height="32dp"
         android:layout_marginStart="30dp"
@@ -80,7 +80,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_sign_in" />
 
     <TextView
-        android:id="@+id/register"
+        android:id="@+id/tv_register"
         android:layout_width="69dp"
         android:layout_height="27dp"
         android:layout_marginTop="24dp"
@@ -95,7 +95,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_sign_in" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/iv_imageView"
         android:layout_width="264dp"
         android:layout_height="166dp"
         android:layout_marginStart="35dp"

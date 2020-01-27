@@ -9,10 +9,10 @@ data class User (
     @field:SerializedName("password")
     val pasword: String? = null,
 
-    @field:SerializedName("firstname")
+    @field:SerializedName("firstName")
     val firstname: String? = null,
 
-    @field:SerializedName("lastname")
+    @field:SerializedName("lastName")
     val lastname: String? = null
 
 )

@@ -1,16 +1,17 @@
-package ru.petriwna.mytestideaintech.ui.login.activity
+package ru.petriwna.mytestideaintech.ui.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 
-import kotlinx.android.synthetic.main.activity_select_genres.*
 import ru.petriwna.mytestideaintech.R
 
-class SelectGenresActivity : AppCompatActivity() {
+class EditProfileActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_select_genres)
+        setContentView(R.layout.activity_edit_profile)
+
+
 
     }
 

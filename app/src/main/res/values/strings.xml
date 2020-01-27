@@ -19,25 +19,29 @@
     <string name="title_activity_register">RegisterActivity</string>
     <string name="sign_in"><u>Sign in</u></string>
 
+    <string-array name="ganges">
+        <item>Rock</item>
+        <item>Hip Hop</item>
+        <item>Pop</item>
+        <item>Grime</item>
+        <item>Dance</item>
+        <item>Jazz</item>
+        <item>Folk Music</item>
+    </string-array>
+
+    <string-array name="skillsets">
+        <item>Guitarist</item>
+        <item>Bass Player</item>
+        <item>Keyboard Player</item>
+        <item>Drummer</item>
+        <item>Producer</item>
+        <item>Vocalis</item>
+        <item>Top Line Writer</item>
+        <item>Recording Enginner</item>
+    </string-array>
+
     <string name="title_activity_select_genres">SelectGenresActivity</string>
-    <string name="select_genres_rock">Rock</string>
-    <string name="select_genres_hiphop">Hip Hop</string>
-    <string name="select_genres_pop">Pop</string>
-    <string name="select_genres_grime">Grime</string>
-    <string name="select_genres_dance">Dance</string>
-    <string name="select_genres_jazz">Jazz</string>
-    <string name="select_genres_folk_music">Folk Music</string>
-
-
     <string name="title_activity_select_skillsets">SelectSkillsetsActivity</string>
-    <string name="select_skillsets_guitarist">Guitarist</string>
-    <string name="select_skillsets_bass">Bass Player</string>
-    <string name="select_skillsets_keyboard">Keyboard Player</string>
-    <string name="select_skillsets_drummer">Drummer</string>
-    <string name="select_skillsets_producer">Producer</string>
-    <string name="select_skillsets_vocalist">Vocalis</string>
-    <string name="select_skillsets_top_line">Top Line Writer</string>
-    <string name="select_skillsets_recording">Recording Enginner</string>
     <string name="title_activity_profile_actitvity">ProfileActitvity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -49,5 +53,6 @@
     <string name="show_link">Show link</string>
     <string name="support">Support</string>
     <string name="Logout">Logout</string>
+    <string name="sarch">Search</string>
 
 </resources>

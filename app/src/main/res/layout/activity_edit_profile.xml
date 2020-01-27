@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgr_prolile"
-    tools:context=".ui.login.activity.EditProfileActivity">
+    tools:context=".ui.activity.EditProfileActivity">
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/iv_imageView"
         android:layout_width="match_parent"
         android:layout_height="310dp"
         android:scaleType="centerCrop"
@@ -45,7 +45,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.395"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_imageView" />
 
     <TextView
         android:id="@+id/textView4"
