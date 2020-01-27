@@ -6,7 +6,7 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.Body
 import retrofit2.http.POST
-import ru.petriwna.mytestideaintech.model.LoginResponce
+import ru.petriwna.mytestideaintech.model.LoginResponse
 import ru.petriwna.mytestideaintech.model.RegistrationResponce
 import ru.petriwna.mytestideaintech.model.User
 
@@ -16,7 +16,7 @@ interface AuthAPI {
     fun restration(@Body string: User): Observable<RegistrationResponce>
 
     @POST("auth/login")
-    fun login(@Body string: User): Observable<LoginResponce>
+    fun login(@Body string: User): Observable<LoginResponse>
 
 
     companion object Factory {

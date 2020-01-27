@@ -8,6 +8,7 @@ import android.widget.*
 import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_login.et_password
+import ru.petriwna.mytestideaintech.PaperIO
 
 import ru.petriwna.mytestideaintech.R
 import ru.petriwna.mytestideaintech.model.User
@@ -37,9 +38,10 @@ class LoginActivity : AppCompatActivity() {
 
             if (isFormValid()) {
                 RepositoryProvider.provideSearchRepository().login(User(email = et_email.text.toString(),
-                    pasword = et_password.text.toString()))
+                    password = et_password.text.toString()))
                     .subscribeOn(Schedulers.io())
                     .subscribe({ result ->
+                        PaperIO.saveUser(result)
                         val intent = Intent(this, EditProfileActivity::class.java)
                         startActivity(intent)
                     }, { error ->

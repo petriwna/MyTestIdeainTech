@@ -66,7 +66,7 @@ class RegisterActivity : AppCompatActivity() {
         btn_register.setOnClickListener {
             if (isFormValid()) {
                 RepositoryProvider.provideSearchRepository().restration(User(email = et_email.text.toString(),
-                    pasword = et_password.text.toString(), firstname = first_last_name.text.toString(), lastname = first_last_name.text.toString()))
+                    password = et_password.text.toString(), firstName = first_last_name.text.toString(), lastName = first_last_name.text.toString()))
                     .subscribeOn(Schedulers.io())
                     .subscribe({ result ->
                         val intent = Intent(this, EditProfileActivity::class.java)
