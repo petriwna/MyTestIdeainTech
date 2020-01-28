@@ -1,19 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/backgr_prolile">
 
-    <TextView
-        android:id="@+id/text_home"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+    <ImageView
+        android:id="@+id/img_profile"
+        android:layout_width="217dp"
+        android:layout_height="186dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="82dp"
+        android:src="@drawable/profile_avatar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/tv_skillsets"
+        app:layout_constraintEnd_toEndOf="@+id/img_profile"
+        app:layout_constraintStart_toStartOf="@+id/img_profile"
+        app:layout_constraintTop_toBottomOf="@+id/img_profile" />
+
+    <TextView
+        android:id="@+id/tv_skillsets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/tv_genres"
+        app:layout_constraintEnd_toEndOf="@+id/tv_user_name"
+        app:layout_constraintStart_toStartOf="@+id/tv_user_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_user_name" />
+
+    <TextView
+        android:id="@+id/tv_genres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/btn_collabs"
+        app:layout_constraintEnd_toEndOf="@+id/tv_skillsets"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_skillsets" />
+
+    <Button
+        android:id="@+id/btn_collabs"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="@dimen/btn_margin_25"
+        android:layout_marginEnd="@dimen/btn_margin_2"
+        android:layout_marginBottom="@dimen/btn_margin_2"
+        android:background="@color/c_collabs"
+        android:drawableTop="@drawable/ic_users_icon"
+        android:text="@string/my_collabs"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/btn_music"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintBottom_toTopOf="@+id/btn_bio"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_music"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="@dimen/btn_margin_2"
+        android:layout_marginStart="@dimen/btn_margin_2"
+        android:layout_marginEnd="@dimen/btn_margin_25"
+        android:background="@color/c_music"
+        android:drawableTop="@drawable/ic_music"
+        android:text="@string/my_music"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_genres"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_collabs" />
+
+    <Button
+        android:id="@+id/btn_bio"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="@dimen/btn_margin_25"
+        android:layout_marginEnd="@dimen/btn_margin_2"
+        android:layout_marginTop="@dimen/btn_margin_2"
+        android:layout_marginBottom="@dimen/btn_margin_8"
+        android:background="@color/c_bio"
+        android:drawableTop="@drawable/ic_profile"
+        android:text="@string/my_bio"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/tabs"
+        app:layout_constraintEnd_toEndOf="@+id/btn_collabs"
+        app:layout_constraintEnd_toStartOf="@+id/btn_gigs"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_gigs"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="@dimen/btn_margin_25"
+        android:layout_marginStart="@dimen/btn_margin_2"
+        android:layout_marginTop="@dimen/btn_margin_2"
+        android:layout_marginBottom="@dimen/btn_margin_8"
+        android:background="@color/c_gigs"
+        android:drawableTop="@drawable/ic_star"
+        android:text="@string/my_gigs"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/tabs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_bio"
+        app:layout_constraintTop_toTopOf="@+id/btn_bio"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/btn_gigs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.271">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_user_icon" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_loupe" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_bubble" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_star_ico" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_shape" />
+    </com.google.android.material.tabs.TabLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

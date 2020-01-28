@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorPrimaryDark">#e5005b</color>
     <color name="colorAccent">#D81B60</color>
 
     <color name="pink">#e5005b</color>
@@ -10,5 +10,10 @@
 
     <color name="txt_gey">#80ffffff</color>
     <color name="textView_profile">#ff8500</color>
+    
+    <color name="c_collabs">#00a580</color>
+    <color name="c_music">#008ca1</color>
+    <color name="c_bio">#e5005b</color>
+    <color name="c_gigs">#ebb600</color>
 
 </resources>
