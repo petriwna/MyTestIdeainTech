@@ -9,7 +9,7 @@
 
 
     <ImageView
-        android:id="@+id/iv_imageView"
+        android:id="@+id/iv_avatar"
         android:layout_width="match_parent"
         android:layout_height="310dp"
         android:scaleType="centerCrop"
@@ -45,10 +45,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.395"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_avatar" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tv_user_name"
         android:layout_width="322dp"
         android:layout_height="45dp"
         android:layout_marginStart="25dp"
@@ -67,28 +67,43 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_select_skill"
         android:layout_width="320dp"
         android:layout_height="53dp"
         android:layout_marginTop="24dp"
         android:text="@string/sellect_skillsets"
         android:textColor="#ffffff"
         android:background="@drawable/btn_profile_skillsets"
-        app:layout_constraintEnd_toEndOf="@+id/textView4"
-        app:layout_constraintStart_toStartOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintEnd_toEndOf="@+id/tv_user_name"
+        app:layout_constraintStart_toStartOf="@+id/tv_user_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_user_name" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_select_genres"
         android:layout_width="316dp"
         android:layout_height="51dp"
         android:layout_marginTop="20dp"
         android:textColor="#ffffff"
-        android:text="Select main genres"
+        android:text="@string/select_main_genres"
         android:background="@drawable/btn_profile_genres"
-        app:layout_constraintEnd_toEndOf="@+id/button"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintEnd_toEndOf="@+id/btn_select_skill"
+        app:layout_constraintStart_toStartOf="@+id/btn_select_skill"
+        app:layout_constraintTop_toBottomOf="@+id/btn_select_skill" />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:background="#000000"
+        android:text="@string/confirm"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_select_genres"
+        app:layout_constraintVertical_bias="1.0"
+        android:gravity="end"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout >

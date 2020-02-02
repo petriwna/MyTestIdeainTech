@@ -62,4 +62,7 @@
     <string name="my_collabs">My Collabs</string>
     <string name="my_music">My Music</string>
     <string name="my_gigs">My Gigs</string>
+    <string name="select_main_genres">Select main genres</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
 </resources>

@@ -6,8 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import kotlinx.android.synthetic.main.fragment_gallery.*
 import ru.petriwna.mytestideaintech.R
 
 class GalleryFragment : Fragment() {
@@ -19,13 +19,15 @@ class GalleryFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        web_view.loadUrl("https://www.tutorialkart.com/kotlin-android/android-webview-example/")
+
         galleryViewModel =
             ViewModelProviders.of(this).get(GalleryViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_gallery, container, false)
-        val textView: TextView = root.findViewById(R.id.text_gallery)
-        galleryViewModel.text.observe(this, Observer {
-            textView.text = it
-        })
-        return root
+//        val root = inflater.inflate(R.layout.fragment_gallery, container, false)
+//        val textView: TextView = root.findViewById(R.id.text_gallery)
+//        galleryViewModel.text.observe(this, Observer {
+//            textView.text = it
+//        })
+        return web_view
     }
 }

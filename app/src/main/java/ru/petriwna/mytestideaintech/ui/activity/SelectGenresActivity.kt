@@ -1,5 +1,6 @@
 package ru.petriwna.mytestideaintech.ui.activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -32,6 +33,11 @@ class SelectGenresActivity : AppCompatActivity() {
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
             }
         })
+
+        btn_cancel.setOnClickListener {
+            val intent = Intent(this, EditProfileActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 

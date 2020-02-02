@@ -23,10 +23,10 @@
         android:textSize="20sp"
         android:lineSpacingExtra="-23.3sp"
         android:textColor="#7f7f7f"
-        app:layout_constraintEnd_toEndOf="@+id/iv_imageView"
+        app:layout_constraintEnd_toEndOf="@+id/iv_avatar"
         app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="@+id/iv_imageView"
-        app:layout_constraintTop_toBottomOf="@+id/iv_imageView" />
+        app:layout_constraintStart_toStartOf="@+id/iv_avatar"
+        app:layout_constraintTop_toBottomOf="@+id/iv_avatar" />
 
     <EditText
         android:id="@+id/et_password"
@@ -95,7 +95,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_sign_in" />
 
     <ImageView
-        android:id="@+id/iv_imageView"
+        android:id="@+id/iv_avatar"
         android:layout_width="264dp"
         android:layout_height="166dp"
         android:layout_marginStart="35dp"

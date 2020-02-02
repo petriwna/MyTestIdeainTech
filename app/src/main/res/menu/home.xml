@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
         <item
-            android:id="@+id/menuEdit"
-            android:title="About" />
-
+            android:id="@+id/action_favorite"
+            android:icon="@drawable/ic_edit"
+            android:title="edit"
+            app:showAsAction="always"/>
         <item
-            android:id="@+id/menuSettings"
-            android:title="Settings" />
+            android:title="more"
+            android:id="@+id/action_search"
+            android:icon="@drawable/ic_more"
+            app:showAsAction="always"/>
+
 
 </menu>

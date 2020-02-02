@@ -6,6 +6,7 @@ import ru.petriwna.mytestideaintech.model.LoginResponse
 class PaperIO {
     companion object {
         fun save(name: String, info:Any) {
+
             Paper.book().write(name, info)
         }
 
@@ -19,5 +20,6 @@ class PaperIO {
             }
             return null
         }
+
     }
 }

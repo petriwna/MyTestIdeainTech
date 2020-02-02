@@ -1,5 +1,6 @@
 package ru.petriwna.mytestideaintech.ui.activity
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -11,8 +12,8 @@ import com.google.android.material.navigation.NavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import android.view.Menu
-import androidx.core.view.GravityCompat
-import kotlinx.android.synthetic.main.activity_home.*
+import android.view.MenuItem
+import kotlinx.android.synthetic.main.app_bar_home.*
 import ru.petriwna.mytestideaintech.R
 
 class HomeActivity : AppCompatActivity() {
@@ -40,15 +41,19 @@ class HomeActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
     }
 
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return super.onOptionsItemSelected(item)
+    }
+
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        toolbar.inflateMenu(R.menu.home)
         // Inflate the menu; this adds items to the action bar if it is present.
-        
-        //drawer_layout.openDrawer(GravityCompat.END)
-        return false
+        return true
     }
 
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
+
 }
